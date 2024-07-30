@@ -1,0 +1,35 @@
+Scenario: 
+You are developing a library management system where users can search for books by title or author.
+Steps:
+1.	Understand Search Algorithms:
+1.a.	Explain linear search and binary search algorithms.
+Ans : Linear Search:
+Linear search involves iterating through each element of a list sequentially until the desired element is found or the end of the list is reached. 
+Its time complexity is O(n), where n is the number of elements, making it straightforward but less efficient for large datasets.
+Binary Search:
+Binary search is a more efficient algorithm that works on sorted lists. 
+It repeatedly divides the search interval in half, comparing the target value to the middle element, and discarding half of the remaining elements based on the comparison. 
+Its time complexity is O(log n), making it much faster than linear search for large, sorted datasets.
+
+4.	Analysis:
+4.a.	Compare the time complexity of linear and binary search.
+Ans : Time Complexity Comparison:
+Linear Search:
+Time Complexity: O(n)
+Linear search checks each element one by one. In the worst case, it may need to examine all n elements to find the target or determine that it is not present.
+Binary Search:
+Time Complexity: O(log n)
+Binary search repeatedly divides the search range in half. For a list of size n, it requires at most log₂(n) comparisons, making it much faster than linear search for large datasets.
+
+4.b.	Discuss when to use each algorithm based on the data set size and order.
+Ans : When to Use Each Algorithm:
+Linear Search:
+Use When: The dataset is small, unsorted, or when data is frequently changing. It's simple and doesn't require the data to be sorted.
+Binary Search:
+Use When: The dataset is large and sorted. It's efficient due to its logarithmic time complexity but requires the data to be sorted beforehand. 
+For frequently updated datasets, sorting might need to be managed, which can be costly.
+
+
+
+
+

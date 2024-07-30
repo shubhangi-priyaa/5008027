@@ -1,0 +1,44 @@
+1.	Understand the Problem:
+
+1.a.	Explain why data structures and algorithms are essential in handling large inventories.
+Ans :   Data structures and algorithms are crucial for managing large inventories because they help organize and process data efficiently. 
+Data structures like arrays, linked lists, and trees store inventory items in a way that makes it quick to find and update them. 
+Algorithms, such as searching and sorting methods, enable fast and accurate retrieval and organization of inventory data. 
+This efficiency is essential for handling large amounts of information and ensuring smooth operations in inventory management.
+
+
+1.b	   Discuss the types of data structures suitable for this problem.
+Ans :  The types of data structures suitable for this problem are :
+ArrayList: Effective for cases where frequent indexing is needed to access elements. 
+However, operations like insertion and deletion can be expensive due to the potential need to shift elements.
+
+HashMap: Best suited for situations requiring rapid access, insertion, and deletion using unique keys (e.g., productId). 
+It offers average O(1) time complexity for these operations.
+
+LinkedList: Ideal for scenarios involving frequent insertions and deletions. 
+Accessing elements by index is slower compared to ArrayList.
+
+TreeMap: Keeps elements sorted by their keys. 
+It's useful for maintaining a sorted order of items but performs slower than HashMap for basic operations.
+
+
+
+4.  	Analysis:
+4.a 	Analyze the time complexity of each operation (add, update, delete) in your chosen data structure.
+Ans :   
+- Add operation: O(1) for HashMap, O(n) for ArrayList, O(1)
+- Update operation: O(1) for HashMap, O(n) for ArrayList, O(n)
+- Delete operation: O(1) for HashMap, O(n) for ArrayList, O(n)
+- Get Operation (getProduct): O(1) on average, as retrieving a value by key in HashMap is done in constant time.
+
+
+4.b 	Discuss how you can optimize these operations.
+Ans :   
+- For HashMap, ensure that the hash function is well-distributed to minimize collisions, which improves average-case performance and reduces the likelihood of expensive rehashing operations.
+- For ArrayList, consider using a different data structure like LinkedList for frequent insertions and deletions, as LinkedList provides more efficient insertion and removal operations compared to ArrayList.
+- For TreeMap, use a more efficient sorting algorithm or consider using a different data structure like HashMap if you do not require the sorted order, as HashMap provides faster average-case performance for basic operations.
+
+
+
+
+

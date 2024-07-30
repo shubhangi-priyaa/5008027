@@ -1,0 +1,38 @@
+Scenario: 
+You are developing an employee management system for a company. Efficiently managing employee records is crucial.
+Steps:
+1.	Understand Array Representation:
+1.a.	Explain how arrays are represented in memory and their advantages.
+Ans: Array Representation in Memory and Advantages:
+Contiguous Memory: Arrays are stored in contiguous memory locations, allowing efficient direct access. The address of each element is calculated using a base address plus an offset, making element access very fast.
+Indexing: Arrays use zero-based indexing for direct access to elements, enabling constant-time retrieval (O(1)).
+Fixed Size: The size of an array is fixed upon creation, leading to efficient memory usage but lacking flexibility for dynamic resizing.
+
+Advantages:
+Fast Access: Direct access to elements using indices is very quick (O(1)).
+Memory Efficiency: Minimal overhead due to contiguous memory allocation.
+Performance: Benefits from cache locality, which can improve access speeds.
+Simplicity: Easy to implement and use with built-in support in many programming languages.
+
+4.	Analysis:
+4.a.	Analyze the time complexity of each operation (add, search, traverse, delete).
+Ans : Add:
+Time Complexity: O(1) on average if there's space in the array. 
+If the array is full and needs to be expanded, the complexity is O(n) due to copying elements to a new array.
+Search:
+Time Complexity: O(n) because each element might need to be checked sequentially in the worst case.
+Traverse:
+Time Complexity: O(n) as each element must be visited once.
+Delete:
+Time Complexity: O(n) because elements need to be shifted to fill the gap left by the removed item.
+
+4.b.	Discuss the limitations of arrays and when to use them.
+Ans : Limitations:
+Fixed Size: Arrays have a fixed size which cannot be changed dynamically after creation.
+Expensive Insertions and Deletions: Inserting or deleting elements requires shifting, which can be inefficient.
+Memory Waste: If the array is over-allocated, there can be wasted memory.
+
+When to Use Arrays:
+Known Size: When the number of elements is known in advance and does not change frequently.
+Fast Access Needed: When fast, constant-time access to elements is required.
+Simple Use Cases: For simple scenarios where dynamic resizing is not necessary and overhead needs to be minimal.

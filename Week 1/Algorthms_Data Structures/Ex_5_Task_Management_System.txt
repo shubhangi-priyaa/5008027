@@ -1,0 +1,30 @@
+Scenario: 
+You are developing a task management system where tasks need to be added, deleted, and traversed efficiently.
+Steps:
+1.	Understand Linked Lists:
+1.a.	Explain the different types of linked lists (Singly Linked List, Doubly Linked List).
+Ans: Singly Linked List:
+Structure: Each node contains data and a reference (or link) to the next node in the sequence.
+Operations: Efficient for adding and removing elements from the beginning or end, but searching requires traversing from the start.
+Doubly Linked List:
+Structure: Each node contains data and two references: one to the next node and one to the previous node.
+Operations: Allows traversal in both directions, making insertion and deletion operations easier and more flexible than singly linked lists.
+
+4.	Analysis:
+4.a. 	Analyze the time complexity of each operation.
+Ans : Time Complexity:
+Add: O(n) for adding at the end, where n is the number of tasks. O(1) if adding at the start.
+Search: O(n) because you may need to traverse the entire list to find the task.
+Traverse: O(n) as each task is visited once.
+Delete: O(n) for finding the task and potentially O(1) for deletion once found.
+
+4.b.	Discuss the advantages of linked lists over arrays for dynamic data.
+Ans: Advantages Over Arrays:
+Dynamic Size: Linked lists can easily grow and shrink in size without needing to resize or shift elements.
+Efficient Insertions/Deletions: Adding or removing tasks, especially at the beginning or middle, 
+is more efficient because it doesn’t require shifting elements, unlike arrays.
+
+
+
+
+

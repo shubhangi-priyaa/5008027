@@ -1,0 +1,44 @@
+Scenario: 
+You are tasked with sorting customer orders by their total price on an e-commerce platform. This helps in prioritizing high-value orders.
+Steps:
+1.	Understand Sorting Algorithms:
+1.a 	Explain different sorting algorithms (Bubble Sort, Insertion Sort, Quick Sort, Merge Sort).
+Ans : 
+Bubble Sort:
+Description: Repeatedly compares adjacent elements and swaps them if they are in the wrong order. Continues until no swaps are needed.
+Time Complexity: O(n^2) - Both in the average and worst cases.
+Best Case: O(n) - When the array is already sorted (optimizable version).
+
+Insertion Sort:
+Description: Builds the sorted array one item at a time by repeatedly picking the next item and inserting it into its correct position.
+Time Complexity: O(n^2) - Average and worst cases.
+Best Case: O(n) - When the array is already sorted.
+
+Quick Sort:
+Description: Divides the array into smaller sub-arrays based on a pivot element. Elements less than the pivot go to the left, and those greater go to the right, then recursively sorts the sub-arrays.
+Time Complexity: O(n log n) - Average case.
+Worst Case: O(n^2) - When the pivot choices are poor (e.g., always the smallest or largest element).
+
+Merge Sort:
+Description: Divides the array into two halves, recursively sorts each half, and then merges the sorted halves.
+Time Complexity: O(n log n) - Both in the average and worst cases.
+
+
+4.	Analysis:
+4.a.	Compare the performance (time complexity) of Bubble Sort and Quick Sort.
+Ans : Time Complexity Comparison:
+Bubble Sort:
+Time Complexity: O(n^2) - Both average and worst cases.
+Best Case: O(n) - If already sorted.
+
+Quick Sort:
+Time Complexity: O(n log n) - Average case.
+Worst Case: O(n^2) - Poor pivot choices.
+
+
+4.b.	Discuss why Quick Sort is generally preferred over Bubble Sort.
+Ans : Quick Sort is favored over Bubble Sort due to its superior average-case time complexity of O(n log n), 
+which significantly outperforms Bubble Sort's O(n^2) for large datasets. 
+This efficiency is achieved through Quick Sort's divide-and-conquer strategy, 
+which progressively reduces the problem size by partitioning the array. As a result, 
+Quick Sort is typically chosen for its faster performance and more effective handling of large arrays.
